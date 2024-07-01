@@ -3904,6 +3904,18 @@ if (typeof window !== "undefined" && window["pdfjs-dist/build/pdf"]) {
 
 module.exports = pdfjsLib;
 
+
+if (typeof window !== "undefined" && window["pdfjs-dist"]) {
+  pdfjs = window["pdfjs-dist"];
+} else {
+  pdfjs = require("../build/pdf.js");
+}
+
+module.exports = pdfjs;
+
+
+
+
 /***/ }),
 /* 6 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {

@@ -3,7 +3,8 @@ module.exports = {
     port: process.env.PORT ? process.env.PORT : 3000,
     languages: ['en', 'de','fr'],
     fallbackLng: 'en',
-    namespace: 'translation'
+    namespace: 'translation',
+    version: '1.0.1'
   };
 
 

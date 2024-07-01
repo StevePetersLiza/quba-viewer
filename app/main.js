@@ -12,7 +12,8 @@ const {
 const os = require("os");
 const { autoUpdater } = require("electron-updater");
 const electronLocalShortcut = require("electron-localshortcut");
-const pdfjsLib = require("pdfjs-dist/legacy/build/pdf");
+//const pdfjsLib = require("pdfjs-dist/legacy/build/pdf");
+const pdfjsLib = require("pdfjs-dist/build/pdf.js");
 const Store = require("electron-store");
 const isDev = require("electron-is-dev");
 const https = require("https");
