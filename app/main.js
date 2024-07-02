@@ -16,6 +16,7 @@ const electronLocalShortcut = require("electron-localshortcut");
 const pdfjsLib = require("pdfjs-dist/build/pdf.js");
 const Store = require("electron-store");
 const isDev = require("electron-is-dev");
+//const isDev = 1; //
 const https = require("https");
 const menuFactoryService = require("./menuConfig");
 const jsdom = require("jsdom");

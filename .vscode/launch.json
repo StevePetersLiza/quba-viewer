@@ -8,10 +8,16 @@
       "type": "node",
       "request": "launch",
       "name": "Programm starten",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "program": "${workspaceFolder}/app/main.js"
+      "skipFiles": ["<node_internals>/**"],
+     // "program": "${workspaceFolder}/app/main.js",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+      "windows": {
+        "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
+      },
+      "args" : ["."],
+      "outputCapture": "std",
+      "env": { "ELECTRON_IS_DEV": "1" }
     }
   ]
 }
